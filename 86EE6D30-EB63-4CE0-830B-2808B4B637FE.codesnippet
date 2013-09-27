@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initWithDataObject</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (id)initWithDataObject:(id)dataObject{
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"&lt;#Name#&gt;TableViewCell" owner:nil options:nil];
+    self = [nib objectAtIndex:0];
+    
+    if (self = [super initWithDataObject:dataObject]) {
+        _&lt;#binderIVAR#&gt; = [[PFObjectBinder alloc] initWithTargetObject:&lt;#self#&gt; targetKeyPath:@"&lt;#targetKeypath#&gt;" sourceObject:&lt;#self#&gt; sourceKeyPath:@"&lt;#sourceKeypath#&gt;"];
+      
+        
+        [self stylize];
+    }
+    return self;
+
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>86EE6D30-EB63-4CE0-830B-2808B4B637FE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>initWithDataObject:</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
